@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://127.0.0.1:3360/vote_test?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    hikari:
+      maximum-pool-size: 1
+  flyway:
+    locations: classpath:db/migration
